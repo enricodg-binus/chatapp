@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chat_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/default_user_icon"
+        android:layout_marginRight="15dp"
+        tools:ignore="InvalidId" />
+
+    <TextView
+        android:id="@+id/chat_receivername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Display Name"
+        android:textSize="@dimen/default_font_size"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/chat_lastseen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/chat_receivername"
+        android:text="Last Seen"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+
+
+</RelativeLayout>
